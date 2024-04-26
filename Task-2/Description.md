@@ -32,10 +32,10 @@
 
 ### 3. Параметры BLAST
 
-Program: blastn. <br/>
-Database - nucleotide collection (nr/rt). <br/>
-Optimization - Highly similar sequences (megablast).<br/>
-Organism - mammals (taxid:40674) (exclude)
+**Program** - [blastn](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome). <br/>
+**Database** - nucleotide collection (nr/rt). <br/>
+**Optimization** - Highly similar sequences (megablast).<br/>
+**Organism** - mammals (taxid:40674) (exclude)
 
 ### 4. Гомологичные гены
 
