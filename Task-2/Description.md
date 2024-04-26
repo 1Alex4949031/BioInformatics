@@ -32,8 +32,8 @@
 
 ### 3. Параметры BLAST
 
-Program: blastn.
-Database - nucleotide collection (nr/rt).<br/>
+Program: blastn. <br/>
+Database - nucleotide collection (nr/rt). <br/>
 Optimization - Highly similar sequences (megablast).<br/>
 Organism - mammals (taxid:40674) (exclude)
 
