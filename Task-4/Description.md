@@ -112,3 +112,17 @@ View the API reference documentation at http://127.0.0.1:4200/docs
 
 Check out the dashboard at http://127.0.0.1:4200
 ```
+- Еще нужно прописать
+```
+$env:PREFECT_API_URL="http://127.0.0.1:4200/api"
+```
+- После запуска файла hello_world.py полчуим
+```
+20:06:42.479 | INFO    | prefect.engine - Created flow run 'competent-bee' for flow 'hello-world'
+20:06:42.487 | INFO    | prefect.engine - View at http://127.0.0.1:4200/runs/flow-run/9e4d9dc5-5fe7-4d2e-9797-a7851966425d
+Hello, World!
+20:06:42.651 | INFO    | Flow run 'competent-bee' - Finished in state Completed()
+```
+![image](https://github.com/user-attachments/assets/7f7e73ef-c909-4c00-b42f-653983a541eb)
+
+
