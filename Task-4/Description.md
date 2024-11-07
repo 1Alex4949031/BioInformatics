@@ -1,5 +1,7 @@
 # Задание 4
 
+_Работу выполнял через **wsl**_
+
 1. Скачал результат секвенирования (набор ридов) Escherichia coli [SRR31254081](https://www.ncbi.nlm.nih.gov/sra/?term=SRR31254081)
 2. Скачал референсный геном [Escherichia coli K-12 MG1655](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000005845.2/)
 3. Установил программы **FastQC, bwa, samtools**:
@@ -76,3 +78,12 @@ samtools flagstat aln-se.sorted.bam > flagstat_report.txt
 0 + 0 with mate mapped to a different chr (mapQ>=5)
 ```
 - Результат работы находится в файле flagstat_output.txt
+9. Написал script-report.sh (однако дополнительно удалил симовол возврата каретки)
+```
+sed -i 's/\r$//' /mnt/c/Bio/task-4/ncbi_dataset/ncbi_dataset/data/GCA_000005845.2/script-report.sh
+```
+```
+bash /mnt/c/Bio/task-4/ncbi_dataset/ncbi_dataset/data/GCA_000005845.2/script-report.sh
+```
+- Получили сообщение **not OK**
+
