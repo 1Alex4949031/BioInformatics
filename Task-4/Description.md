@@ -86,4 +86,29 @@ sed -i 's/\r$//' /mnt/c/Bio/task-4/ncbi_dataset/ncbi_dataset/data/GCA_000005845.
 bash /mnt/c/Bio/task-4/ncbi_dataset/ncbi_dataset/data/GCA_000005845.2/script-report.sh
 ```
 - Получили сообщение **not OK**
+10. Настройка фрейсоврка Prefect
+- Установка Prefect
+```
+pip install prefect
+```
+- Создадим базовый python файл hello_world.py
+- Запустим сервер фрейсворка Prefect
+```
+prefect server start
+```
+```
+Switched to profile 'local'
 
+ ___ ___ ___ ___ ___ ___ _____
+| _ \ _ \ __| __| __/ __|_   _|
+|  _/   / _|| _|| _| (__  | |
+|_| |_|_\___|_| |___\___| |_|
+
+Configure Prefect to communicate with the server with:
+
+prefect config set PREFECT_API_URL=http://127.0.0.1:4200/api
+
+View the API reference documentation at http://127.0.0.1:4200/docs
+
+Check out the dashboard at http://127.0.0.1:4200
+```
