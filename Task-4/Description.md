@@ -141,6 +141,7 @@ not OK
 11:14:46.837 | INFO    | Task run 'evaluate_alignment-274' - Finished in state Completed()
 11:14:46.875 | INFO    | Flow run 'thundering-sunfish' - Finished in state Completed()
 ```
+![image](https://github.com/user-attachments/assets/fd817894-b651-4265-975b-55e0ed44bbe4)
 ![image](https://github.com/user-attachments/assets/0235db5a-25b0-4774-8ceb-7009c551b7bc)
 ![image](https://github.com/user-attachments/assets/cf618cc7-ca96-426a-8cf4-9c3c97e89e30)
 
