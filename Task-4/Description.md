@@ -126,21 +126,30 @@ Hello, World!
 ![image](https://github.com/user-attachments/assets/7f7e73ef-c909-4c00-b42f-653983a541eb)
 11. Проверим написаный скрип на python. Выполним скрипт на python. По итогу получим
 ```
-11:14:40.666 | INFO    | prefect.engine - Created flow run 'thundering-sunfish' for flow 'quality-assessment-pipeline'
-11:14:40.668 | INFO    | prefect.engine - View at http://127.0.0.1:4200/runs/flow-run/d07cff44-9118-4b13-b6d8-814653d689d8
-11:14:40.725 | INFO    | Flow run 'thundering-sunfish' - Запуск пайплайна оценки качества картирования
-11:14:40.758 | INFO    | Task run 'run_flagstat-214' - Запускаем samtools flagstat для файла: aln-se.sorted.bam
-11:14:46.794 | INFO    | Task run 'run_flagstat-214' - Команда samtools flagstat выполнена успешно
-11:14:46.797 | INFO    | Task run 'run_flagstat-214' - Finished in state Completed()
-11:14:46.814 | INFO    | Task run 'parse_flagstat_output-488' - Парсинг результата samtools flagstat для извлечения процента выравнивания
-11:14:46.815 | INFO    | Task run 'parse_flagstat_output-488' - Найден процент выравненных ридов: 68.63%
-11:14:46.818 | INFO    | Task run 'parse_flagstat_output-488' - Finished in state Completed()
-11:14:46.834 | INFO    | Task run 'evaluate_alignment-274' - Оценка качества картирования: 68.63%
-11:14:46.835 | WARNING | Task run 'evaluate_alignment-274' - Результат: not OK
+11:33:33.537 | INFO    | prefect.engine - Created flow run 'carrot-guppy' for flow 'quality-assessment-pipeline'
+11:33:33.537 | INFO    | prefect.engine - View at http://127.0.0.1:4200/runs/flow-run/410e4fdb-e4a3-4986-a7c7-2561b9d1b74c
+11:33:33.618 | INFO    | Flow run 'carrot-guppy' - Запуск пайплайна оценки качества картирования
+11:33:33.650 | INFO    | Task run 'run_flagstat-49d' - Запускаем samtools flagstat для файла: aln-se.sorted.bam
+11:33:39.014 | INFO    | Task run 'run_flagstat-49d' - Команда samtools flagstat выполнена успешно
+11:33:39.020 | INFO    | Task run 'run_flagstat-49d' - Finished in state Completed()
+11:33:39.037 | INFO    | Task run 'parse_flagstat_output-a20' - Парсинг результата samtools flagstat для извлечения процента выравнивания
+11:33:39.037 | INFO    | Task run 'parse_flagstat_output-a20' - Найден процент выравненных ридов: 68.63%
+11:33:39.037 | INFO    | Task run 'parse_flagstat_output-a20' - Finished in state Completed()
+11:33:39.056 | INFO    | Task run 'evaluate_alignment-292' - Оценка качества картирования: 68.63%
+11:33:39.056 | INFO    | Task run 'evaluate_alignment-292' - Результат: not OK
 not OK
-11:14:46.837 | INFO    | Task run 'evaluate_alignment-274' - Finished in state Completed()
-11:14:46.875 | INFO    | Flow run 'thundering-sunfish' - Finished in state Completed()
+11:33:39.061 | INFO    | Task run 'evaluate_alignment-292' - Finished in state Completed()
+Результаты сохранены в файл mapping_results.txt
+11:33:39.078 | INFO    | Task run 'save_results-53f' - Finished in state Completed()
+11:33:39.119 | INFO    | Flow run 'carrot-guppy' - Finished in state Completed()
 ```
+- В итоге получим файл с ответом
+```
+Результаты картирования:
+Процент выравненных ридов: 68.63%
+Оценка: not OK
+```
+
 ![image](https://github.com/user-attachments/assets/fd817894-b651-4265-975b-55e0ed44bbe4)
 ![image](https://github.com/user-attachments/assets/0235db5a-25b0-4774-8ceb-7009c551b7bc)
 ![image](https://github.com/user-attachments/assets/cf618cc7-ca96-426a-8cf4-9c3c97e89e30)
