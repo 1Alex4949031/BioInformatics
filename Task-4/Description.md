@@ -116,7 +116,7 @@ Check out the dashboard at http://127.0.0.1:4200
 ```
 $env:PREFECT_API_URL="http://127.0.0.1:4200/api"
 ```
-- После запуска файла hello_world.py полчуим
+- После запуска файла hello_world.py получим
 ```
 20:06:42.479 | INFO    | prefect.engine - Created flow run 'competent-bee' for flow 'hello-world'
 20:06:42.487 | INFO    | prefect.engine - View at http://127.0.0.1:4200/runs/flow-run/9e4d9dc5-5fe7-4d2e-9797-a7851966425d
@@ -124,5 +124,19 @@ Hello, World!
 20:06:42.651 | INFO    | Flow run 'competent-bee' - Finished in state Completed()
 ```
 ![image](https://github.com/user-attachments/assets/7f7e73ef-c909-4c00-b42f-653983a541eb)
+11. Проверим написаный скрип на python. Выполним скрипт на python. По итогу получим
+```
+10:32:14.109 | INFO    | prefect.engine - Created flow run 'marigold-seal' for flow 'quality-assessment-pipeline'
+10:32:14.111 | INFO    | prefect.engine - View at http://127.0.0.1:4200/runs/flow-run/f0541288-8f95-4393-ba8a-81e196cc04f1
+10:32:16.473 | INFO    | Task run 'run_flagstat-2de' - Finished in state Completed()
+10:32:16.496 | INFO    | Task run 'parse_flagstat_output-1cd' - Finished in state Completed()
+not OK
+10:32:16.515 | INFO    | Task run 'evaluate_alignment-063' - Finished in state Completed()
+10:32:16.554 | INFO    | Flow run 'marigold-seal' - Finished in state Completed()
+```
+![image](https://github.com/user-attachments/assets/0235db5a-25b0-4774-8ceb-7009c551b7bc)
+![image](https://github.com/user-attachments/assets/cf618cc7-ca96-426a-8cf4-9c3c97e89e30)
+
+
 
 
