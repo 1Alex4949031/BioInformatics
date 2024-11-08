@@ -86,13 +86,13 @@ sed -i 's/\r$//' /mnt/c/Bio/task-4/ncbi_dataset/ncbi_dataset/data/GCA_000005845.
 bash /mnt/c/Bio/task-4/ncbi_dataset/ncbi_dataset/data/GCA_000005845.2/script-report.sh
 ```
 - Получили сообщение **not OK**
-10. Настройка фрейсоврка Prefect
+10. Настройка фреймворка Prefect
 - Установка Prefect
 ```
 pip install prefect
 ```
 - Создадим базовый python файл hello_world.py
-- Запустим сервер фрейсворка Prefect
+- Запустим сервер фреймворка Prefect
 ```
 prefect server start
 ```
