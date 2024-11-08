@@ -126,13 +126,20 @@ Hello, World!
 ![image](https://github.com/user-attachments/assets/7f7e73ef-c909-4c00-b42f-653983a541eb)
 11. Проверим написаный скрип на python. Выполним скрипт на python. По итогу получим
 ```
-10:32:14.109 | INFO    | prefect.engine - Created flow run 'marigold-seal' for flow 'quality-assessment-pipeline'
-10:32:14.111 | INFO    | prefect.engine - View at http://127.0.0.1:4200/runs/flow-run/f0541288-8f95-4393-ba8a-81e196cc04f1
-10:32:16.473 | INFO    | Task run 'run_flagstat-2de' - Finished in state Completed()
-10:32:16.496 | INFO    | Task run 'parse_flagstat_output-1cd' - Finished in state Completed()
+11:14:40.666 | INFO    | prefect.engine - Created flow run 'thundering-sunfish' for flow 'quality-assessment-pipeline'
+11:14:40.668 | INFO    | prefect.engine - View at http://127.0.0.1:4200/runs/flow-run/d07cff44-9118-4b13-b6d8-814653d689d8
+11:14:40.725 | INFO    | Flow run 'thundering-sunfish' - Запуск пайплайна оценки качества картирования
+11:14:40.758 | INFO    | Task run 'run_flagstat-214' - Запускаем samtools flagstat для файла: aln-se.sorted.bam
+11:14:46.794 | INFO    | Task run 'run_flagstat-214' - Команда samtools flagstat выполнена успешно
+11:14:46.797 | INFO    | Task run 'run_flagstat-214' - Finished in state Completed()
+11:14:46.814 | INFO    | Task run 'parse_flagstat_output-488' - Парсинг результата samtools flagstat для извлечения процента выравнивания
+11:14:46.815 | INFO    | Task run 'parse_flagstat_output-488' - Найден процент выравненных ридов: 68.63%
+11:14:46.818 | INFO    | Task run 'parse_flagstat_output-488' - Finished in state Completed()
+11:14:46.834 | INFO    | Task run 'evaluate_alignment-274' - Оценка качества картирования: 68.63%
+11:14:46.835 | WARNING | Task run 'evaluate_alignment-274' - Результат: not OK
 not OK
-10:32:16.515 | INFO    | Task run 'evaluate_alignment-063' - Finished in state Completed()
-10:32:16.554 | INFO    | Flow run 'marigold-seal' - Finished in state Completed()
+11:14:46.837 | INFO    | Task run 'evaluate_alignment-274' - Finished in state Completed()
+11:14:46.875 | INFO    | Flow run 'thundering-sunfish' - Finished in state Completed()
 ```
 ![image](https://github.com/user-attachments/assets/0235db5a-25b0-4774-8ceb-7009c551b7bc)
 ![image](https://github.com/user-attachments/assets/cf618cc7-ca96-426a-8cf4-9c3c97e89e30)
