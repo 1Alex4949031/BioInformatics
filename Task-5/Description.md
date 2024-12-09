@@ -31,6 +31,18 @@
 
 Также добавил папку collab с копиями блокнотов AlphaFold2 и RoseTTAFold2.
 
+Фотографии RoseTTAFold2:
+
+![image](https://github.com/user-attachments/assets/ccf4244c-431c-45fa-a236-60f1026c22b1)
+
+![image](https://github.com/user-attachments/assets/ca8c1a71-46ee-4af2-985b-9a03808d08a9)
+
+Фотографии AlphaFold2:
+
+![image](https://github.com/user-attachments/assets/27cc3277-9a0e-4bd4-a3b2-abfa3d02f53e)
+
+![image](https://github.com/user-attachments/assets/5764a52e-a7ce-431c-a492-bc8559ad318e)
+
 ## 4. Инструмент парного выравнивания
 
 Загрузил оба результата в формате pdb (лежат в папку /pairwise)
@@ -40,7 +52,10 @@
 ![image](https://github.com/user-attachments/assets/e9ea3892-5692-4c2b-9c7f-08073f8d590e)
 
 ## 5 и 6. Визуализация и видео
-Визуализация представлена в папке /pairwise
+
+Визуализация представлена в папке /pairwise.
+
+Также представлены геометрическая модель в бинарном формате molstar-model.glb, видео визуализации в формате mp4, картинка модели в формате png.
 
 Фотография:
 
